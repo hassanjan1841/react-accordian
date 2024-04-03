@@ -24,7 +24,7 @@ const RandomColorGenerator = () => {
     }
   };
   return (
-    <div className="element-primary flex-center h-[40vh] max-w-[900px] flex-col">
+    <div className="element-primary flex-center h-[40vh] min-w-[350px] max-w-[900px] flex-col">
       <div className="flex-center my-4 w-full gap-4 px-4">
         <span
           className={
