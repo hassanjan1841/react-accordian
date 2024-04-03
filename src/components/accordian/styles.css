@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 5px;
   padding: 50px;
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@
   /* color: #fff; */
   font-weight: bold;
   font-size: 1.5rem;
-  @apply rounded dark:bg-btnBgColor-dark bg-btnBgColor-light;
+  @apply rounded bg-btnBgColor-light dark:bg-btnBgColor-dark;
 }
 
 .item button:active {
@@ -29,14 +29,14 @@
   @apply text-center;
 }
 .selectBtn {
-  @apply bg-[#d6d6d6] text-[#000] px-3 py-2 rounded font-bold my-2;
+  @apply my-2 rounded bg-[#d6d6d6] px-3 py-2 font-bold text-[#000];
 }
 
 .item {
   margin-bottom: 1rem;
   padding: 0.5rem;
   width: 100%;
-  @apply rounded dark:bg-elementBgColor-dark bg-elementBgColor-light text-textColor-light dark:text-textColor-dark;
+  @apply rounded bg-elementBgColor-light text-textColor-light dark:bg-elementBgColor-dark dark:text-textColor-dark;
 }
 
 .title {
@@ -44,15 +44,18 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  /* width: 100%; */
 }
 .content-none {
   opacity: 0;
   height: 0;
   min-height: 0px;
+  /* width: 100%; */
 }
 .content-active {
   text-align: left;
   max-height: 150px;
   opacity: 1;
   transition: all 1.5s ease;
+  /* width: 100%; */
 }

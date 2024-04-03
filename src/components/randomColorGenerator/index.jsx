@@ -24,8 +24,8 @@ const RandomColorGenerator = () => {
     }
   };
   return (
-    <div className="element-primary flex-center h-[40vh] w-[800px] flex-col">
-      <div className="flex-center my-4 gap-4">
+    <div className="element-primary flex-center h-[40vh] max-w-[800px] flex-col">
+      <div className="flex-center my-4 w-full gap-4 px-1">
         <span
           className={hex ? "btn-active" : "btn-primary"}
           onClick={() => toggleHex()}
@@ -43,7 +43,7 @@ const RandomColorGenerator = () => {
         </button>
       </div>
       <div
-        className="flex-center flex-end relative h-[30vh] w-[700px] rounded shadow-md shadow-[#000]"
+        className="flex-center flex-end relative h-[30vh] w-[90%] rounded shadow-md shadow-[#000]"
         style={{ background: color }}
       >
         <span className="color-text-area absolute bottom-5 text-4xl text-[#000]">
