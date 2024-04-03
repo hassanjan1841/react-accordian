@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 
 const RandomColorGenerator = () => {
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState("#9f87");
   const [hex, setHex] = useState(true);
   const [rgb, setRGB] = useState(false);
   const toggleHex = () => {
