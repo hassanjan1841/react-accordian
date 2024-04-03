@@ -10,4 +10,7 @@ export default defineConfig({
       autoprefixer: {},
     },
   ],
+  build: {
+    brotliSize: true,
+  },
 });
