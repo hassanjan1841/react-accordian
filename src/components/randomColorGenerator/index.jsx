@@ -25,20 +25,31 @@ const RandomColorGenerator = () => {
   };
   return (
     <div className="element-primary flex-center h-[40vh] max-w-[800px] flex-col">
-      <div className="flex-center my-4 w-full gap-4 px-1">
+      <div className="flex-center my-4 w-full gap-4 px-4">
         <span
-          className={hex ? "btn-active" : "btn-primary"}
+          className={
+            hex
+              ? "btn-active text-xs md:text-3xl"
+              : "btn-primary text-xs md:text-3xl"
+          }
           onClick={() => toggleHex()}
         >
           Create HEX Color
         </span>
         <span
-          className={rgb ? "btn-active" : "btn-primary"}
+          className={
+            rgb
+              ? "btn-active text-xs md:text-3xl"
+              : "btn-primary text-xs md:text-3xl"
+          }
           onClick={() => toggleRGB()}
         >
           Create RGB COlor
         </span>
-        <button className="btn-primary" onClick={() => randomGenerator()}>
+        <button
+          className="btn-primary text-xs md:text-3xl"
+          onClick={() => randomGenerator()}
+        >
           Generate Random Color
         </button>
       </div>
