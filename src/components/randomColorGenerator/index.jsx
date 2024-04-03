@@ -43,7 +43,7 @@ const RandomColorGenerator = () => {
         </button>
       </div>
       <div
-        className="flex-center flex-end relative h-[30vh] w-[700px] shadow-md shadow-[#000]"
+        className="flex-center flex-end relative h-[30vh] w-[700px] rounded shadow-md shadow-[#000]"
         style={{ background: color }}
       >
         <span className="color-text-area absolute bottom-5 text-4xl text-[#000]">
