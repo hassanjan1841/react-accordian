@@ -29,11 +29,11 @@ export default {
     function ({ addComponents }) {
       const buttons = {
         ".btn-primary": {
-          "@apply rounded bg-btnBgColor-light px-3 py-2 text-lg font-bold hover:cursor-pointer dark:bg-btnBgColor-dark dark:hover:bg-[#dad6d6] dark:hover:text-[#000]":
+          "@apply rounded hover:bg-[#022]  hover:text-[#fff] bg-[#eee] text-[#000] px-3 py-2 text-lg font-bold hover:cursor-pointer dark:text-[#fff] dark:bg-btnBgColor-dark dark:hover:bg-[#dad6d6] dark:hover:text-[#000]":
             {},
         },
         ".btn-active": {
-          "@apply rounded bg-btnBgColor-light text-[#000] px-3 py-2 text-lg font-bold hover:cursor-pointer dark:bg-[#fff] dark:hover:bg-[#dad6d6] dark:hover:text-[#000]":
+          "@apply rounded bg-[#022] text-[#fff] px-3 py-2 text-lg font-bold hover:cursor-pointer dark:bg-btnBgColor-light dark:text-[#000] dark:hover:bg-[#dad6d6] dark:hover:text-[#000]":
             {},
         },
         // Add more button styles here

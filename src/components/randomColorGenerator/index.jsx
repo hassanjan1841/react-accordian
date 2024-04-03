@@ -38,12 +38,12 @@ const RandomColorGenerator = () => {
         >
           Create RGB COlor
         </span>
-        <span className="btn-primary" onClick={() => randomGenerator()}>
+        <button className="btn-primary" onClick={() => randomGenerator()}>
           Generate Random Color
-        </span>
+        </button>
       </div>
       <div
-        className={`flex-center flex-end relative h-[30vh] w-[700px] shadow-md shadow-[#000]`}
+        className="flex-center flex-end relative h-[30vh] w-[700px] shadow-md shadow-[#000]"
         style={{ background: color }}
       >
         <span className="color-text-area absolute bottom-5 text-4xl text-[#000]">
