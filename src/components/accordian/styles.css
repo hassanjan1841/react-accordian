@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.item button {
+  padding: 0.25rem 0.75rem;
+  /* color: #fff; */
+  font-weight: bold;
+  font-size: 1.5rem;
+  @apply rounded dark:bg-btnBgColor-dark bg-btnBgColor-light;
+}
+
+.item button:active {
+  outline: none;
+  border: none;
+}
+
+.accordian {
+  width: 24rem;
+  transition: all 0.5s ease;
+  width: 100%;
+  @apply text-center;
+}
+.selectBtn {
+  @apply bg-[#d6d6d6] text-[#000] px-3 py-2 rounded font-bold my-2;
+}
+
+.item {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  @apply rounded dark:bg-elementBgColor-dark bg-elementBgColor-light text-textColor-light dark:text-textColor-dark;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.content-none {
+  opacity: 0;
+  height: 0;
+  min-height: 0px;
+}
+.content-active {
+  text-align: left;
+  max-height: 150px;
+  opacity: 1;
+  transition: all 1.5s ease;
+}
