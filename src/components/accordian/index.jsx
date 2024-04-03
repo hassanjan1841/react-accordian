@@ -27,7 +27,10 @@ const Accordion = () => {
   return (
     <div className="wrapper">
       <div className="accordian">
-        <button className="selectBtn" onClick={() => setMultiSelect(!multiSelect)}>
+        <button
+          className="selectBtn"
+          onClick={() => setMultiSelect(!multiSelect)}
+        >
           {multiSelect ? "Single select" : "Multi select"}
         </button>
         {data.map((item) => {
