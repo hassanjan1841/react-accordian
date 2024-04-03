@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /secret-page.html
+Allow: /public/
+Allow: /images/
+
+Sitemap: https://hassanjan-react-projects.netlify.app/sitemap.txt
